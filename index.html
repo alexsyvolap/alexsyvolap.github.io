@@ -452,7 +452,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Address</h3>
-		            <p>Kropyvnytskyi 25000</p>
+		            <p>Ukraine</p>
 		          </div>
 	          </div>
           </div>
@@ -463,7 +463,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Contact Number</h3>
-					<p class="text-black-50">Hidden</p>
+					<a href="skype:live:a42f4a42abdb684d?call">live:a42f4a42abdb684d</a>
 	            </div>
 	          </div>
           </div>
@@ -474,7 +474,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Email Address</h3>
-		            <p><a href="mailto:oleksandr.syvolap@onix-systems.com">oleksandr.syvolap@onix-systems.com</a></p>
+		            <p><a href="mailto:oleksandr.syvolap@onix-systems.com">snikersmc123@gmail.com</a></p>
 		          </div>
 	          </div>
           </div>
@@ -493,21 +493,21 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form action="#" id="contact" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" name="recipient-name" placeholder="Your Name">
+                <input type="text" class="form-control" name="recipient-name" id="recipient-name" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="recipient-email" placeholder="Your Email">
+                <input type="text" class="form-control" name="recipient-email" id="recipient-email" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="recipient-subject" placeholder="Subject">
+                <input type="text" class="form-control" name="recipient-subject" id="recipient-subject" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea name="recipient-message" id="recipient-message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="recipient-message" id="recipient-message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" disabled value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="button" id="submit-button" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           
@@ -558,6 +558,7 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+  <script src="js/smtp.js"></script>
   
   <script src="js/main.js"></script>
     

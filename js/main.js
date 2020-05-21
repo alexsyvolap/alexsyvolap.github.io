@@ -440,3 +440,30 @@ $(function() {
 
 });
 
+$(function() {
+
+	$('form #submit-button').on('click', function() {
+		let name = $('form #recipient-name').val();
+		let from = $('form #recipient-email').val();
+		let subject = $('form #recipient-subject').val();
+		let body = $('form #recipient-message').val();
+		if(!name || !from || !subject || !body) {
+			alert('Enter all inputs!');
+			return 'error';
+		}
+		Email.send({
+			SecureToken: '8a2d97c9-b113-4a8c-9d6c-bd6b99560fca',
+			To: 'snikersmc123@gmail.com',
+			From: from,
+			Subject: subject,
+			Body: body
+		}).then(
+			message => {
+				$(this).prop('disabled', true);
+				alert(message);
+			}
+		);
+	});
+
+});
+
