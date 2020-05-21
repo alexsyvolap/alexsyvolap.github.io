@@ -456,11 +456,11 @@ $(function() {
 			To: 'snikersmc123@gmail.com',
 			From: from,
 			Subject: subject,
-			Body: body
+			Body: name + ', ' + body
 		}).then(
 			message => {
 				$(this).prop('disabled', true);
-				alert(message);
+				alert('Message ' + message)
 			}
 		);
 	});
